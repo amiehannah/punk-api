@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/punk-api/static/css/main.6e3d7b52.chunk.css",
+    "main.js": "/punk-api/static/js/main.67d201eb.chunk.js",
+    "main.js.map": "/punk-api/static/js/main.67d201eb.chunk.js.map",
+    "runtime-main.js": "/punk-api/static/js/runtime-main.4b7cc5d8.js",
+    "runtime-main.js.map": "/punk-api/static/js/runtime-main.4b7cc5d8.js.map",
+    "static/js/2.077e4910.chunk.js": "/punk-api/static/js/2.077e4910.chunk.js",
+    "static/js/2.077e4910.chunk.js.map": "/punk-api/static/js/2.077e4910.chunk.js.map",
+    "static/js/3.ac599af1.chunk.js": "/punk-api/static/js/3.ac599af1.chunk.js",
+    "static/js/3.ac599af1.chunk.js.map": "/punk-api/static/js/3.ac599af1.chunk.js.map",
+    "index.html": "/punk-api/index.html",
+    "static/css/main.6e3d7b52.chunk.css.map": "/punk-api/static/css/main.6e3d7b52.chunk.css.map",
+    "static/js/2.077e4910.chunk.js.LICENSE.txt": "/punk-api/static/js/2.077e4910.chunk.js.LICENSE.txt",
+    "static/media/Brewdog-Logo-Background-PNG-Image-1.a400b833.png": "/punk-api/static/media/Brewdog-Logo-Background-PNG-Image-1.a400b833.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.4b7cc5d8.js",
+    "static/js/2.077e4910.chunk.js",
+    "static/css/main.6e3d7b52.chunk.css",
+    "static/js/main.67d201eb.chunk.js"
+  ]
+}
