@@ -1,0 +1,26 @@
+$dk-blue: #01335f;
+$blue: #00a2cf;
+$aqua: #77b4c3;
+$off-white: #f4f3f4;
+$bright-white: #ffffff;
+$dark-grey-hover: rgba(40, 40, 40, 0.4);
+$black: #111111;
+$soft-grey: rgba(245, 245, 245, 0.839);
+$grey: #e0dedc;
+
+$base-spacing: 5px;
+
+%card {
+  max-height: 455px;
+  max-width: 300px;
+  height: 100%;
+  width: 100%;
+  backface-visibility: hidden;
+  background-color: white;
+  position: absolute;
+
+  &:hover {
+    background-color: white;
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,66 @@
+@import "../../variables.module.scss";
+
+  .filter {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    font-size: 14px;
+    padding: $base-spacing * 2;
+    width: 90vw;
+  
+    @media only screen and (min-width: 500px) {
+      width: 80vw;
+    }
+    @media only screen and (min-width: 768px) {
+      width: 60vw;
+    }
+  }
+
+  label {
+    display: flex;
+    flex-direction: row;
+    display: grid;
+    grid-template-columns: 1em auto;
+    gap: 0.5em;
+    font-family: "Inter", sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 1.1;
+
+    @media only screen and (min-width: 768px) {
+      font-size: 14px;
+    }
+  }
+  
+  
+  input[type="checkbox"] {
+    -webkit-appearance: none;
+    appearance: none;
+    margin: 0;
+    font: inherit;
+    color: currentColor;
+    width: 1.15em;
+    height: 1.15em;
+    border: 0.12em solid currentColor;
+    border-radius: 0.15em;
+    transform: translateY(-0.075em);
+    cursor: pointer;
+    display: grid;
+    place-content: center;
+  }
+  
+  input[type="checkbox"]::before {
+    content: " ";
+    width: 0.65em;
+    height: 0.65em;
+    transform: scale(0);
+    transition: 120ms transform ease-in-out;
+    box-shadow: inset 1em 1em $black;
+    transform-origin: bottom left;
+    clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+  }
+  
+  input[type="checkbox"]:checked::before {
+    transform: scale(1);
+  }
+  

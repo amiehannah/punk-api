@@ -1,0 +1,16 @@
+@import "../../variables.module.scss";
+
+.inputBar {
+    width: 40%;
+    font-size: 14px;
+    height: 25px;
+    border: none;
+    font-style: italic;
+    padding: $base-spacing;
+  
+    @media only screen and (min-width: 768px) {
+        max-width: 30%;
+        font-size: 15px;
+        }
+  }
+  

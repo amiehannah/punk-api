@@ -1,0 +1,44 @@
+@import "../../variables.module.scss";
+
+.cardBack {
+  padding: $base-spacing * 4;
+  position: relative;
+  height: 455px;
+  width: 300px;
+  border-radius: 0.5rem;
+  background-color: $soft-grey;
+  border: 2px solid $soft-grey;
+  display: flex;
+  flex-wrap: no-wrap;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: $base-spacing;
+  justify-content: space-around;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+
+  &:hover {
+    background-color: white;
+    cursor: pointer;
+  }
+}
+
+p {
+  padding: $base-spacing * 2;
+  font-size: 14px;
+  line-height: 1rem;
+  font-style: italic;
+}
+
+.bold {
+  font-weight: 600;
+}
+
+.pairing {
+  border-top: 0.75px solid $dark-grey-hover;
+  max-height: 20vh;
+}
+
+li {
+  list-style-type: none;
+}

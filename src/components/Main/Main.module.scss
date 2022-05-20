@@ -1,0 +1,28 @@
+@import "../../variables.module.scss";
+
+.grid {
+  max-width: 85vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: $base-spacing * 8; //215px if you want to add hero image
+  margin-bottom: $base-spacing * 20;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 300px);
+  gap: $base-spacing * 8;
+  min-height: 100%;
+  //   padding: $base-spacing * 2;
+
+  .card {
+    height: 455px;
+    width: 300px;
+  }
+}
+
+.main {
+  display: flex;
+  // min-height: 79vh;
+}

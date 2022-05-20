@@ -1,0 +1,76 @@
+@import "../../variables.module.scss";
+
+.header {
+  background-color: white;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: sticky;
+  top: 0px;
+  border-bottom: 1px solid #e0dedc;
+  z-index: 10;
+}
+
+.title {
+  height: 10vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Antonio", sans-serif;
+  font-weight: 400;
+  padding-right: $base-spacing * 17;
+
+  @media only screen and (min-width: 768px) {
+    padding-right: $base-spacing * 26;
+  }
+}
+
+.logo {
+  max-width: 140px;
+
+  @media only screen and (max-width: 600px) {
+    width: 155px;
+  }
+  @media only screen and (min-width: 768px) {
+    max-width: 175px;
+  }
+}
+
+.btnWrapper {
+  // margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: $base-spacing * 4;
+
+  @media only screen and (min-width: 768px) {
+    padding-left: $base-spacing * 6;
+  }
+}
+
+.button {
+  font-size: 12px;
+  height: 28px;
+  width: 70px;
+  border-radius: $base-spacing * 10;
+  border: 1px solid $grey;
+  flex: inline-flex;
+  cursor: pointer;
+
+  @media only screen and (max-width: 600px) {
+    width: 85px;
+    height: 30px;
+    font-size: 14px;
+  }
+
+  @media only screen and (min-width: 768px) {
+    width: 100px;
+    height: 30px;
+    font-size: 14px;
+  }
+
+  &:hover {
+    background-color: white;
+  }
+}
