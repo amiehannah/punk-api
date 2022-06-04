@@ -6,7 +6,7 @@
 
 ##
 
-![Punk App Design](./src/assets/zephyr-ph.png)
+![Punk App Design](./src/assets/libertine-porter-img.png)
 
 ## User Story:
 
@@ -49,6 +49,8 @@ To Start Server:
 To Visit App:
 
 `http://localhost:3000/punk-api`
+
+##
 
 ## Functionality:
 
