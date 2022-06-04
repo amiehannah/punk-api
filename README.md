@@ -6,21 +6,29 @@
 
 ##
 
-<p align="center">
-  <img src="./src/assets/brewdog-punk-api.gif" alt="BrewDog Punk API gif">
-</p>
-
+![Punk App Design](./src/assets/zephyr-ph.png)
 
 ## User Story:
 
+- As a user of the Punk API website, I want to be able to easily browse through a range of BrewDog beers, so that I can .....
+
+- Given, when, then
+- Given that the user has selected
+- Given that I want to search for a specific beer, when typing into the search bar, then I expect to see th
+
 The app should fulfill the following stories:
 
-- Display a range of beers
 - Search for a specific beer using the search bar
 - Use the checkboxes to filter by the following three conditions:
 - High Alcohol content (ABV value greater than 6%)
 - Classic Range (was first brewed before 2010)
 - High Acidity (pH lower than 4)
+
+##
+
+<p align="center">
+  <img src="./src/assets/brewdog-punk-api.gif" alt="BrewDog Punk API gif">
+</p>
 
 ## Installation and Setup Instructions:
 
