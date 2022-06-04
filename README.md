@@ -6,7 +6,9 @@
 
 ##
 
-// ADD IMAGE OR VIDEO HERE
+<p align="center">
+  <img src="../assets/brewdog-punk-api.gif" alt="BrewDog Punk API gif">
+</p>
 
 ## User Story:
 
@@ -56,7 +58,8 @@ To Visit App:
 6. Filter Functionality </br>
    To use the checkboxes to filter by the three conditions **_(highABV, Classic Range, pHLevel)_** I created three individual states. I added an `onClick` event to each checkbox that toggled each change in state, dependent on which box had been clicked.
 
-7. According to the punk `API` docs, you can apply several filters using **_url parameters_** (passed in as a query string to the end of the root endpoint), so I could use the API's data to filter for both:
+7. Interaction with the API </br>
+   According to the punk `API` docs, you can apply several filters using **_url parameters_** (passed in as a query string to the end of the root endpoint), so I could use the API's data to filter for both:
    • High Alcohol content (ABV value greater than 6%)
    • Classic Range (was first brewed before 2010)
 
@@ -67,20 +70,23 @@ To Visit App:
 
 ## Fetching data from the API
 
-- Using the Punk API data for the React app, calling the `API`, getting the response back - turning it into `json` and then setting that response to `state`. </br>
+- Using the Punk API data for the React app, calling the `API`, getting the response back - which is a `json` array with a number of beer objects inside and then setting that response to `state`. </br>
   Default state for the API request was set to return all beers from the Brewdog data.
 - As recommended by the React docs - I extracted the `fetch` request into a `service` (as it is non UI based) and importing it into `App.jsx`
 - As fetching data from an API produces a side-effect, I've used a `useEffect` to manage this.
 
+//All beer endpoints return a json array with a number of beer objects inside.
+//how to interact with the beer object and select the bits of information that you want to display to the user
+
 ## Technologies & Features:
 
 - React.js
-- REST API integration
+- REST API interaction
 - Unit Tested using Jest & Enzyme
 - Mobile first / responsive design
 - Git Version Control
-- `useState()`
-- `useEffect()`
+- `useState Hook`
+- `useEffect Hook`
 - `props`
 
 ## Unit Testing:
@@ -94,7 +100,7 @@ To Visit App:
 
 ## Further Developments:
 
-- To refactor my approach, relook at containers vs. components to try to split out the logic from the presentational components more clearly.
+- To refactor my approach, ensuring I adhere clearly to the Container/Component Design Pattern splitting out logic from presentational components.
 - Introduce unit testing using React Testing Library.
 
 ## Contact
