@@ -31,6 +31,12 @@
 - Given I am on the app and no beers are found that meet the inputted search criteria that I have typed into the search bar, then I expect to see some feedback with an error message displayed on the page.
 - Given I am on the app and no beers are found that meet the conditions of the selected checkboxes, then I expect to see some feedback with an error message displayed on the page.
 
+<br/>
+<div align="right">
+    <b><a href="#----">↥ back to top</a></b>
+</div>
+<br/>
+
 ##
 
 <p align="center">
@@ -40,20 +46,17 @@
 ## Installation and Setup:
 
 Clone down this repository. You will need `node` and `npm` installed globally on your machine.
+`git clone https://github.com/amiehannah/punk-api.git`
 
 Installation:
 
 `npm install`
 
-To Run Test Suite:
-
-`npm test`
-
 To Start Server:
 
 `npm start`
 
-To Visit App:
+To Locally Run the App:
 
 `http://localhost:3000/punk-api`
 
