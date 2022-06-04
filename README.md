@@ -6,7 +6,7 @@
 
 ##
 
-![Punk App Design](./src/assets/libertine-porter-img.png)
+![Punk App Design](./src/assets/zephyr-ph.png)
 
 ## User Story:
 
@@ -50,7 +50,7 @@ To Visit App:
 
 `http://localhost:3000/punk-api`
 
-##
+~~~
 
 ## Functionality:
 
