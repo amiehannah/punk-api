@@ -7,8 +7,9 @@
 ##
 
 <p align="center">
-  <img src="../assets/brewdog-punk-api.gif" alt="BrewDog Punk API gif">
+  <img src="../src/assets/brewdog-punk-api.gif" alt="BrewDog Punk API gif">
 </p>
+
 
 ## User Story:
 
