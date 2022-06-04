@@ -45,7 +45,7 @@
 
 ## Installation and Setup:
 
-Clone down this repository. You will need `node` and `npm` installed globally on your machine.
+Clone down this repository. You will need `node` and `npm` installed globally on your machine. </br>
 `git clone https://github.com/amiehannah/punk-api.git`
 
 Installation:
@@ -60,6 +60,11 @@ To Locally Run the App:
 
 `http://localhost:3000/punk-api`
 
+<br/>
+<div align="right">
+    <b><a href="#"> ^ back to top</a></b>
+</div>
+<br/>
 ---
 
 ## Approach & Functionality:
@@ -89,6 +94,12 @@ To Locally Run the App:
 9. There was no predetermined filter for the **_pHLevel_** search condition, so I had to manually filter beers returning those that contained a pHLevel less than 4. I then conditionally rendered the beers based on whether the acidicBeer state was true (display only those beers that have a pHLevel < 4) or false (instead displaying all beers on the page).</br>
    Mapping over the data and rendering a card for each beer.
 
+<br/>
+<div align="right">
+    <b><a href="#"> ^ back to top</a></b>
+</div>
+<br/>
+
 ## Fetching data from the API:
 
 - Using the Punk API data for the React app, calling the `API`, getting the response back - which is a `json` array with a number of beer objects inside and then setting that response to `state`. </br>
@@ -96,8 +107,11 @@ To Locally Run the App:
 - As recommended by the React docs - I extracted the `fetch` request into a `service` (as it is non UI based) and importing it into `App.jsx`
 - As fetching data from an API produces a side-effect, I've used a `useEffect` to manage this.
 
-//All beer endpoints return a json array with a number of beer objects inside.
-//how to interact with the beer object and select the bits of information that you want to display to the user
+<br/>
+<div align="right">
+    <b><a href="#"> ^ back to top</a></b>
+</div>
+<br/>
 
 ## Technologies & Features:
 
@@ -110,6 +124,12 @@ To Locally Run the App:
 - `useEffect Hook`
 - `props`
 
+<br/>
+<div align="right">
+    <b><a href="#"> ^ back to top</a></b>
+</div>
+<br/>
+
 ## Unit Testing:
 
 - Unit tested the components using the enzyme testing library.
@@ -119,11 +139,29 @@ To Locally Run the App:
 - Testing props have been successfully passed down to components
 - Using mock functions to test my functions.
 
+<br/>
+<div align="right">
+    <b><a href="#"> ^ back to top</a></b>
+</div>
+<br/>
+
 ## Further Developments:
 
 - To refactor my approach, ensuring I adhere clearly to the Container/Component Design Pattern splitting out logic from presentational components.
 - Introduce unit testing using React Testing Library.
 
+<br/>
+<div align="right">
+    <b><a href="#"> ^ back to top</a></b>
+</div>
+<br/>
+
 ## Contact
 
 Created by [Amie Edwards](mailto:amie.edwards17@gmail.com)
+
+<br/>
+<div align="right">
+    <b><a href="#"> ^ back to top</a></b>
+</div>
+<br/>
