@@ -60,11 +60,6 @@ To Locally Run the App:
 
 `http://localhost:3000/punk-api`
 
-<br/>
-<div align="right">
-    <b><a href="#"> ^ back to top</a></b>
-</div>
-<br/>
 ---
 
 ## Approach & Functionality:
@@ -107,12 +102,6 @@ To Locally Run the App:
 - As recommended by the React docs - I extracted the `fetch` request into a `service` (as it is non UI based) and importing it into `App.jsx`
 - As fetching data from an API produces a side-effect, I've used a `useEffect` to manage this.
 
-<br/>
-<div align="right">
-    <b><a href="#"> ^ back to top</a></b>
-</div>
-<br/>
-
 ## Technologies & Features:
 
 - React.js
@@ -124,12 +113,6 @@ To Locally Run the App:
 - `useEffect Hook`
 - `props`
 
-<br/>
-<div align="right">
-    <b><a href="#"> ^ back to top</a></b>
-</div>
-<br/>
-
 ## Unit Testing:
 
 - Unit tested the components using the enzyme testing library.
@@ -139,22 +122,10 @@ To Locally Run the App:
 - Testing props have been successfully passed down to components
 - Using mock functions to test my functions.
 
-<br/>
-<div align="right">
-    <b><a href="#"> ^ back to top</a></b>
-</div>
-<br/>
-
 ## Further Developments:
 
 - To refactor my approach, ensuring I adhere clearly to the Container/Component Design Pattern splitting out logic from presentational components.
 - Introduce unit testing using React Testing Library.
-
-<br/>
-<div align="right">
-    <b><a href="#"> ^ back to top</a></b>
-</div>
-<br/>
 
 ## Contact
 
