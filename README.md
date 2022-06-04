@@ -50,8 +50,7 @@ To Visit App:
 
 `http://localhost:3000/punk-api`
 
-~~~
-
+---
 ## Functionality:
 
 1. Initially I started by breaking down the webpage, creating the components based on a component tree.
