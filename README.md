@@ -8,21 +8,28 @@
 
 ![Punk App Design](./src/assets/zephyr-ph.png)
 
+## Table of Contents
+
+- [User Story](#user-story)
+- [Installation and Setup](#installation-and-setup)
+- [Approach & Functionality](#approach--functionality)
+- [Fetching data from the API](#fetching-data-from-the-api)
+- [Technologies & Features](#technologies--features)
+- [Unit Testing](#unit-testing)
+- [Further Developments](#further-developments)
+- [Contact](#contact)
+
 ## User Story:
 
-- As a user of the Punk API website, I want to be able to easily browse through a range of BrewDog beers, so that I can .....
+- As a user of the Punk API website, I want to be able to easily browse through a range of BrewDog beers, so that I can select the most suitable beer to use.
 
-- Given, when, then
-- Given that the user has selected
-- Given that I want to search for a specific beer, when typing into the search bar, then I expect to see th
-
-The app should fulfill the following stories:
-
-- Search for a specific beer using the search bar
-- Use the checkboxes to filter by the following three conditions:
-- High Alcohol content (ABV value greater than 6%)
-- Classic Range (was first brewed before 2010)
-- High Acidity (pH lower than 4)
+- Given that I am on the app and I do not click on a filter or search for a specific beer via the search bar, then I would like to be able to see **_all_** of the beers available.
+- Given I am on the app and want to find out more information on a specific beer, when I click on a beer card, then I would like to be able to see information displayed about that beer (e.g. description, pH level, food pairing suggestion)
+- Given I am on the app and want to search for a specific beer, when I type into the search bar, then I expect to see the chosen beer displayed on screen if it is present in the BrewDog back catalogue.
+- Given I am on the app and want to filter by a specific condition (either: **_High Alcohol content_** (ABV value greater than 6%) - OR - **_Classic Range_** (was first brewed before 2010) - OR - **_High Acidity_** (pH lower than 4)), when I select a checkbox, then I expect to see beers returned that meet that criteria.
+- Given I am on the app and want to filter by multiple search criteria, when I check multiple checkboxes in the filter menu, then I expect to see the beers that meet those specific criterias displayed on the page.
+- Given I am on the app and no beers are found that meet the inputted search criteria that I have typed into the search bar, then I expect to see some feedback with an error message displayed on the page.
+- Given I am on the app and no beers are found that meet the conditions of the selected checkboxes, then I expect to see some feedback with an error message displayed on the page.
 
 ##
 
@@ -30,7 +37,7 @@ The app should fulfill the following stories:
   <img src="./src/assets/brewdog-punk-api.gif" alt="BrewDog Punk API gif">
 </p>
 
-## Installation and Setup Instructions:
+## Installation and Setup:
 
 Clone down this repository. You will need `node` and `npm` installed globally on your machine.
 
@@ -51,11 +58,12 @@ To Visit App:
 `http://localhost:3000/punk-api`
 
 ---
-## Functionality:
+
+## Approach & Functionality:
 
 1. Initially I started by breaking down the webpage, creating the components based on a component tree.
 
-2. I also tested out the data (to later be imported via an API request). I used Postman to understand which data structures had been used to store the beer information and how I can later access certain bits of information from the data.
+2. I also tested out the data (to later be imported via an API request). I used **_Postman_** to understand which data structures had been used to store the beer information and how I can later access certain bits of information from the data.
 
 3. Display a range of beers </br>
    I chose to display the range of beers using card components. Using the React hook `useState`, I set state to an `onClick` event on the card component. I was able to flip the cards, enabling the user to see more information for each beer on the front and back of each card.
@@ -78,7 +86,7 @@ To Visit App:
 9. There was no predetermined filter for the **_pHLevel_** search condition, so I had to manually filter beers returning those that contained a pHLevel less than 4. I then conditionally rendered the beers based on whether the acidicBeer state was true (display only those beers that have a pHLevel < 4) or false (instead displaying all beers on the page).</br>
    Mapping over the data and rendering a card for each beer.
 
-## Fetching data from the API
+## Fetching data from the API:
 
 - Using the Punk API data for the React app, calling the `API`, getting the response back - which is a `json` array with a number of beer objects inside and then setting that response to `state`. </br>
   Default state for the API request was set to return all beers from the Brewdog data.
