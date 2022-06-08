@@ -5,7 +5,7 @@
   background-color: rgb(245, 245, 245);
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
   opacity: 1;
-  height: 28%;
+  height: 190px;
   width: 100%;
   position: fixed;
   z-index: 1;
@@ -15,10 +15,21 @@
   padding-top: 50px; /* Place content 60px from the top */
   transition: 0.5s;
 
-  @media only screen and (min-width: 400px) {
-      padding-top: 60px;
-      height: 25%;
-      }
+  @media screen and (min-width: 576px) {
+    height: 190px;
+    padding-top: 60px;
+  }
+
+  @media screen and (min-width: 769px) {
+    height: 190px;
+    padding-top: 60px;
+  }
+
+  @media screen and (min-width: 1000px) {
+    height: 220px;
+    padding-top: 80px;
+  }
+
 }
 
 .navHidden {
@@ -35,4 +46,3 @@
   padding-top: $base-spacing * 8;
   gap: $base-spacing * 3;
 }
-
